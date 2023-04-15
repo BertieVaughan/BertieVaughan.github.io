@@ -3,6 +3,17 @@
 	<title>
 		Aquafy Webpage
 	</title>
+	<script>
+		function search() {
+			var searchString = document.getElementsByTagName("input")[0].value;
+			for (var i = 0; i < 3; i = i + 1) {
+				alert("You searched for: " + searchString);
+				var fontSize = document.getElementsByTagName("input")[0].style.fontsize;
+				document.getElementsByTagName("input")[0].style.fontsize = 12 + "px";
+				document.getElementsByTagName("input")[0].style.backgroundColor = "red";
+			}			
+		}
+	</script>
 </head>
 <body>
 <h1>
@@ -23,5 +34,9 @@
 	As a member, you will collaborate with like-minded individuals, gain hands-on experience
 	in waste management, and play an active role in preserving our planet's precious water resources.
 </p>
+<!--<p>
+	<input type="text" style="font-size: 100px;" />
+	<button onclick="search()">Search</button>
+</p>-->
 </body>
 </html>
